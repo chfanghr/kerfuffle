@@ -2,7 +2,7 @@ name: Build Using MSVC On x86_64 Windows
 on: [push]
 
 jobs:
-  build:
+  build-and-test:
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
@@ -17,6 +17,9 @@ jobs:
         run: pip install conan
       - name: Get CMake
         uses: symbitic/install-cmake@master
-      - name: Build And Tests
+      - name: Build And Tests (Debug)
         shell: cmd
         run: tools\build\msvc-x86_64-windows-debug.cmd
+      - name: Build And Tests (Release)
+        shell: cmd
+        run: tools\build\msvc-x86_64-windows-release.cmd
