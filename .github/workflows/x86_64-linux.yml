@@ -12,6 +12,6 @@ jobs:
           python-version: '3.x'
           architecture: 'x64'
       - name: Install conan
-          run: pip3 install conan
+        run: pip3 install conan
       - name: Get CMake
           uses: symbitic/install-cmake@master
