@@ -1,0 +1,6 @@
+[requires]
+gtest/1.10.0
+fmt/7.0.2
+
+[generators]
+cmake

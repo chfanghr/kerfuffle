@@ -1,0 +1,22 @@
+INCLUDE(FindGit)
+
+IF (NOT GIT_EXECUTABLE)
+  SET(GIT_EXECUTABLE "")
+ENDIF ()
+
+FUNCTION(CREATE_GEN_VERSION_TARGET)
+  SET(TARGET_NAME ${ARGV0})
+  SET(SRC ${ARGV1})
+  SET(DST ${ARGV2})
+
+  ADD_CUSTOM_TARGET(
+      ${TARGET_NAME}
+      ${CMAKE_COMMAND}
+      -D SRC=${SRC}
+      -D DST=${DST}
+      -D GIT_EXECUTABLE=${GIT_EXECUTABLE}
+      -P ${CMAKE_SOURCE_DIR}/CMake/modules/Version.cmake
+  )
+
+  MESSAGE(STATUS "Version generator target ${TARGET_NAME} added")
+ENDFUNCTION()
