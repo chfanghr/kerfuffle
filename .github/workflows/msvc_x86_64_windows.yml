@@ -17,9 +17,9 @@ jobs:
         run: pip install conan
       - name: Get CMake
         uses: symbitic/install-cmake@master
-      - name: Build And Test (Debug)
-        shell: cmd
-        run: tools\build_scripts\msvc-x86_64-windows-debug.cmd
+#       - name: Build And Test (Debug)
+#         shell: cmd
+#         run: tools\build_scripts\msvc-x86_64-windows-debug.cmd
       - name: Build And Test (Release)
         shell: cmd
         run: tools\build_scripts\msvc-x86_64-windows-release.cmd
