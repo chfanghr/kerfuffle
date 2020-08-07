@@ -6,6 +6,8 @@
 
 #define KERFUFFLE_ENABLE_LOG_INTERFACE
 #define KERFUFFLE_ENABLE_ASSERT
+#include <cstdlib>
+
 #include <gtest/gtest.h>
 #include <kerfuffle.h>
 
