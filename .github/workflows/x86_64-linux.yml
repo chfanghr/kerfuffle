@@ -17,3 +17,5 @@ jobs:
         uses: symbitic/install-cmake@master
       - name: Install clang
         run: tools/build_scripts/ubuntu_18_04_x86_64_install_clang.sh
+      - name: Build and test (Debug)
+        run: tools/build_scripts/linux_debug_build.sh
