@@ -24,6 +24,10 @@ IF (BUILD_TESTS)
     SET(GTEST_LIB gtest_main gtest)
   ENDIF ()
 
+  IF (CMAKE_SYSTEM_NAME MATCHES "Linux")
+    SET(GTEST_LIB ${GTEST_LIB} pthread)
+  ENDIF ()
+
   MESSAGE(VERBOSE "Linking to gtest library: ${GTEST_LIB}")
   ENABLE_TESTING()
 ENDIF ()
