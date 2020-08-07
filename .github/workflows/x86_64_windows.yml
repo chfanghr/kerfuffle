@@ -1,4 +1,4 @@
-name: Build Using MSVC On x86_64 Windows
+name: x86_64 Windows
 on: [push]
 
 jobs:
