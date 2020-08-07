@@ -102,4 +102,6 @@ _deps
 
 build
 build_air
-cmake-build*
+cmake-build-debug
+cmake-build-debug-coverage
+cmake-build-release
