@@ -22,4 +22,4 @@ jobs:
         run: tools\build_scripts\msvc-x86_64-windows-debug.cmd
       - name: Build And Test (Release)
         shell: cmd
-        run: tools\build\msvc-x86_64-windows-release.cmd
+        run: tools\build_scripts\msvc-x86_64-windows-release.cmd
