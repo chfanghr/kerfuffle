@@ -2,6 +2,7 @@
 // Created by 方泓睿 on 8/4/20.
 //
 
+#include <cstdlib>
 #include <fmt/format.h>
 
 #define KERFUFFLE_ENABLE_SERIALIZATION
