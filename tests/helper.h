@@ -171,4 +171,6 @@ struct LoggerT
 
 using Logger = LoggerT<>;
 
+#define STATIC_ASSERT_EQ(x, y) \
+  static_assert(access(x) == access(y), #x " and " #y " should be equal")
 #include "helper.inl"

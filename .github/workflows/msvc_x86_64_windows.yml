@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Add msbuild to PATH
-        uses: microsoft/setup-msbuild@v1.0.1
+        uses、: microsoft/setup-msbuild@v1.0.1
       - name: Add python3 to PATH
         uses: actions/setup-python@v2
         with:
@@ -20,6 +20,6 @@ jobs:
       - name: Build And Test (Debug)
         shell: cmd
         run: tools\build\msvc-x86_64-windows-debug.cmd
-      - name: Build And Test (Release)
-        shell: cmd
-        run: tools\build\msvc-x86_64-windows-release.cmd
+#      - name: Build And Test (Release)
+#        shell: cmd
+#        run: tools\build\msvc-x86_64-windows-release.cmd

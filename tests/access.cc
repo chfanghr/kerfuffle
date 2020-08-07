@@ -18,24 +18,24 @@ using FSM = M::PeerRoot<
                   M::Composite<S(B_1), S(B_1_1), S(B_1_2)>,
                   M::Composite<S(B_2), S(B_2_1), S(B_2_2)> > >;
 
-static_assert(FSM::regionId<A>() == 1, "");
-static_assert(FSM::regionId<A_2>() == 2, "");
-static_assert(FSM::regionId<B>() == 3, "");
-static_assert(FSM::regionId<B_1>() == 4, "");
-static_assert(FSM::regionId<B_2>() == 5, "");
+STATIC_ASSERT_EQ(FSM::regionId<A>(), 1);
+STATIC_ASSERT_EQ(FSM::regionId<A_2>(), 2);
+STATIC_ASSERT_EQ(FSM::regionId<B>(), 3);
+STATIC_ASSERT_EQ(FSM::regionId<B_1>(), 4);
+STATIC_ASSERT_EQ(FSM::regionId<B_2>(), 5);
 
-static_assert(FSM::stateId<A>() == 1, "");
-static_assert(FSM::stateId<A_1>() == 2, "");
-static_assert(FSM::stateId<A_2>() == 3, "");
-static_assert(FSM::stateId<A_2_1>() == 4, "");
-static_assert(FSM::stateId<A_2_2>() == 5, "");
-static_assert(FSM::stateId<B>() == 6, "");
-static_assert(FSM::stateId<B_1>() == 7, "");
-static_assert(FSM::stateId<B_1_1>() == 8, "");
-static_assert(FSM::stateId<B_1_2>() == 9, "");
-static_assert(FSM::stateId<B_2>() == 10, "");
-static_assert(FSM::stateId<B_2_1>() == 11, "");
-static_assert(FSM::stateId<B_2_2>() == 12, "");
+STATIC_ASSERT_EQ(FSM::stateId<A>(), 1);
+STATIC_ASSERT_EQ(FSM::stateId<A_1>(), 2);
+STATIC_ASSERT_EQ(FSM::stateId<A_2>(), 3);
+STATIC_ASSERT_EQ(FSM::stateId<A_2_1>(), 4);
+STATIC_ASSERT_EQ(FSM::stateId<A_2_2>(), 5);
+STATIC_ASSERT_EQ(FSM::stateId<B>(), 6);
+STATIC_ASSERT_EQ(FSM::stateId<B_1>(), 7);
+STATIC_ASSERT_EQ(FSM::stateId<B_1_1>(), 8);
+STATIC_ASSERT_EQ(FSM::stateId<B_1_2>(), 9);
+STATIC_ASSERT_EQ(FSM::stateId<B_2>(), 10);
+STATIC_ASSERT_EQ(FSM::stateId<B_2_1>(), 11);
+STATIC_ASSERT_EQ(FSM::stateId<B_2_2>(), 12);
 
 struct A : FSM::State {
   const kerfuffle::StateID id = FSM::stateId<A>();
