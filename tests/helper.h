@@ -77,7 +77,7 @@ struct Event {
         const float        utility_ = 0.0f)
       : origin(origin_), type(type_), target(target_), utility(utility_) {}
 
-  Event(Type type_, kerfuffle::StateID target_, const float utility_)
+  Event(Type type_, kerfuffle::StateID target_, const float utility_ = 0.0f)
       : origin(kerfuffle::INVALID_STATE_ID),
         type(type_),
         target(target_),
