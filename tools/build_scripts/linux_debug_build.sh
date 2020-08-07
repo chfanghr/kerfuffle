@@ -3,8 +3,8 @@
 set -e
 
 BUILD_FOLDER="cmake-debug-build"
-CC="$(command -v clang-9)"
-CXX="$(command -v clang++-9)"
+export CC="$(command -v clang-9)"
+export CXX="$(command -v clang++-9)"
 
 mkdir ${BUILD_FOLDER}
 conan install . -s compiler=clang -s compiler.version=9 -s compiler.libcxx=libstdc++11 -s build_type=Debug --install-folder=${BUILD_FOLDER}
