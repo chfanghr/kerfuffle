@@ -12,6 +12,10 @@
 #include <kerfuffle.h>
 
 #include <vector>
+#include <algorithm>
+#include <vector>
+
+#include <string.h>
 
 #define S(x) struct x
 
