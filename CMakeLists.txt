@@ -55,7 +55,7 @@ IF (BUILD_TESTS)
   CREATE_TEST(composite_bst)
   CREATE_TEST(delayed_teardown)
   CREATE_TEST(dynamic)
-#  CREATE_TEST(debug)
+  #  CREATE_TEST(debug)  # disable cause cannot pass on Windows
   CREATE_TEST(guard)
-#  CREATE_TEST(randomize)
+  #  CREATE_TEST(randomize) # disable cause cannot pass
 ENDIF ()

@@ -7,4 +7,5 @@ Header-only heriarchical FSM framework in C++11,
 with fully statically-defined structure 
 (no dynamic allocations), built with variadic templates.
 
-
+## Features
+*  
