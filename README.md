@@ -1,7 +1,7 @@
 # Kerfuffle: High-Performance Hierarchical FSM
 
-![x86_64 Windows](https://github.com/chfanghr/kerfuffle/workflows/x86_64%20Windows/badge.svg)
-![x86_64 Linux](https://github.com/chfanghr/kerfuffle/workflows/x86_64%20Linux/badge.svg)
+![Windows](https://github.com/chfanghr/kerfuffle/workflows/Windows/badge.svg)
+![Linux](https://github.com/chfanghr/kerfuffle/workflows/Linux/badge.svg)
 
 Header-only heriarchical FSM framework in C++11, 
 with fully statically-defined structure 
