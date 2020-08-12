@@ -59,7 +59,7 @@ void LoggerT<NFeatureTag IF_UTILITY_THEORY(, TUtilty), TContext>::recordMethod(
 #ifdef KERFUFFLE_ENABLE_PLANS
 
     case Method::PLAN_SUCCEEDED:
-      history.emplace_back(origin, Event::PLAN_SUCCEESS);
+      history.emplace_back(origin, Event::PLAN_SUCCESS);
       break;
 
     case Method::PLAN_FAILED:
