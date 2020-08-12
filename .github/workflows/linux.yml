@@ -1,4 +1,4 @@
-name: x86_64 Linux
+name: Linux
 on: [push]
 
 jobs:
