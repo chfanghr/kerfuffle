@@ -34,6 +34,7 @@ INCLUDE(TestExampleHelper)
 
 IF (BUILD_EXAMPLES)
   CREATE_EXAMPLE(basic_traffic_light)
+  CREATE_EXAMPLE(plan_traffic_light)
   CREATE_EXAMPLE(debug_logger_interface)
   CREATE_EXAMPLE(serialization)
   IF (NOT WIN32)
