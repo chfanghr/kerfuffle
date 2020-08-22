@@ -3,7 +3,7 @@
 ![Windows](https://github.com/chfanghr/kerfuffle/workflows/Windows/badge.svg)
 ![Linux](https://github.com/chfanghr/kerfuffle/workflows/Linux/badge.svg)
 
-Header-only heriarchical FSM framework in C++11, 
+Header-only hierarchical FSM framework in C++11, 
 with fully statically-defined structure 
 (no dynamic allocations), built with variadic templates.
 
@@ -17,7 +17,7 @@ with fully statically-defined structure
 * Hierarchical, with a selection of composite(sub-machine) and orthogonal regions
 * Gamedev-friendly, supports explicit `State::update()`
 * Also supports traditional event-based workflow with `State::react()`
-* Scaleable, supports robust state re-use via state injections
+* Scalable, supports robust state re-use via state injections
 * Built-in logging support
 * Built-in serialization support, with activity and transition history support
 * Permissive [MIT License](LICENSE)
